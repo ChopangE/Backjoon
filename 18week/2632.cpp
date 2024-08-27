@@ -7,9 +7,10 @@
 
 using namespace std;
 
-int m, n,T;
+int m, n, T;
 int res = 0;
-int main() {
+int main()
+{
 	ios_base::sync_with_stdio(false); cin.tie(NULL); cout.tie(NULL);
 	cin >> T;
 	cin >> m >> n;
@@ -40,7 +41,7 @@ int main() {
 		{
 			cut = A[i - 1];
 		}
-		for ( int j = 0; j < m-1; j++ )
+		for ( int j = 0; j < m - 1; j++ )
 		{
 			int tmp = 0;
 			if ( i + j < m )
@@ -85,11 +86,11 @@ int main() {
 			{
 				res += A_map[T - tmp];
 			}
-		}	
+		}
 	}
-	res += A_map[T - B[n-1]];
+	res += A_map[T - B[n - 1]];
 	res += A_map[T];
-	
+
 	cout << res << endl;
 	return 0;
 
