@@ -43,12 +43,10 @@ int main()
 	{
 		if ( arr[i].second - arr[i].first <= d )
 		{
-			res.push_back(arr[i]);
 			mx.push_back(arr[i].second);
 			mn.push_back(arr[i].first);
 		}
 	}
-	sort(res.begin(), res.end());
 	sort(mn.begin(), mn.end());
 	sort(mx.begin(), mx.end());
 	int total = 0;
